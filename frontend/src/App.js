@@ -7,7 +7,7 @@ import Footer from './components/layout/Footer';
 
 import HomePage from './pages/HomePage';
 import NosotrosPage from './pages/NosotrosPage';
-import NovedadesPage from './pages/NovedadesPage';
+import RecetasPage from './pages/RecetasPage';
 import ContactoPage from './pages/ContactoPage';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/nosotros" exact component={NosotrosPage} />
-          <Route path="/novedades" exact component={NovedadesPage} />
+          <Route path="/recetas" exact component={RecetasPage} />
           <Route path="/contacto" exact component={ContactoPage} />
         </Switch>
         <Footer/>
