@@ -1,0 +1,40 @@
+nav{
+    background-color: #524214;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    /* background-color: rgb(219, 194, 124); */
+    /* margin-bottom: 2em; */
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    font-weight: 500;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.315);
+    text-decoration: none;
+    text-align: center;
+    padding: .2em .4em;
+    display: block;
+    position: relative;
+    line-height: 1.2em;
+}
+
+nav ul li a:hover{
+    font-size: 1.1em;
+    padding: 0;
+    text-shadow: 2px 2px 10px #47423a;
+}
+
+nav ul li a:active{
+    font-size: 1em;
+    color: #cac7c7;
+}
