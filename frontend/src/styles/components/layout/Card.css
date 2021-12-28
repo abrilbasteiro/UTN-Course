@@ -1,0 +1,49 @@
+.receta{
+    border: 1px solid #fff;
+    width: 21%;
+    height: autp;
+    overflow: hidden;
+    background-color: #D3DEE7;
+    float: left;
+    margin: 1em;
+}
+
+.receta img{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.tituloReceta{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: .5em 1em;
+    background-color: #A2B8C8;
+}
+
+.receta h3{
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+.receta h4,
+.ingredientesReceta h4{
+    margin: 0;
+    padding: .5em;
+    font-size: .9em;
+}
+
+.ingredientesReceta ul li{
+    font-size: .7em;
+    padding-left: .5em;
+}
+
+.pasosReceta{
+    border-top: 1px solid #fff;
+}
+
+.pasosReceta p{
+    font-size: .7em;
+    margin: 0 0 2em .5em;
+}
