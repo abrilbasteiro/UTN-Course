@@ -3,6 +3,9 @@ import '../../styles/components/layout/Header.css'
 const Header = (props) => {
     return(
         <header>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link nk rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet"/>
             <div className="holder">
                 <div className="logo">
                     <img src="img/logo.png" width="100" alt="logo"/>

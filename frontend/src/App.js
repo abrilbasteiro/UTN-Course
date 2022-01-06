@@ -13,6 +13,10 @@ import ContactoPage from './pages/ContactoPage';
 function App() {
   return (
     <div className="App">
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet"/>
+      
       <Router>
         <Header/>
         <Nav/>
