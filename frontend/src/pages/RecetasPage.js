@@ -1,14 +1,16 @@
 import '../styles/components/pages/RecetasPage.css'
+import Card from '../components/layout/Card';
 
-import NosotrosPage from "./NosotrosPage";
+// import NosotrosPage from "./NosotrosPage";
 
 const RecetasPage = (props) => {
     return(
-        <section className="holder">
+        <section className="holder recetas">
             <h2>Recetas</h2>
-            <h3>Título</h3>
-            <h4>Ingredientes</h4>
-            <p>Pasos a seguir</p>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </section>
     );
 }

@@ -1,0 +1,17 @@
+header{
+    background: linear-gradient(#ffe9a8 70%,#dfc98d, #ac9a68);
+    padding: 1em 0;
+}
+
+header h1{
+    font-size: 4em;
+    font-family: 'Licorice', cursive;
+    bottom: .5em;
+    color: #47423a;
+    margin-left: .5em;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}

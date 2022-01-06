@@ -1,0 +1,26 @@
+/* footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+ */
+
+footer{
+    background-color: rgb(229, 219, 192);
+    padding: 3em 0;
+    margin-top: 2em;
+    height: 20px;
+    clear: both;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    font-size: .7em;
+    font-style: italic;
+    text-align: center;
+}
+
+
