@@ -57,6 +57,7 @@
     border-radius: 50%;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
     margin: .8em 0 1em;
+    width: 8em;
 }
 
 .persona h5, .persona h6{

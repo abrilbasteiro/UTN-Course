@@ -21,6 +21,7 @@
     vertical-align: top;
     width: 25%;
     color: #4c7091;
+    margin: 0.4em 0;
 }
 
 .formulario input,
@@ -47,6 +48,10 @@
     margin: .5em 0;
     text-align: center;
     width: auto;
+}
+
+.formulario input[type="submit"]:hover{
+    background: #718DA5;
 }
 
 .datos{
