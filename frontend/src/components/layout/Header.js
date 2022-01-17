@@ -8,7 +8,7 @@ const Header = (props) => {
             <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet"/>
             <div className="holder">
                 <div className="logo">
-                    <img src="img/logo.png" width="100" alt="logo"/>
+                    <a href='./'><img src="img/logo.png" width="100" alt="logo"/></a>
                     <h1>¿Qué comemos?</h1>
                 </div>
             </div>
