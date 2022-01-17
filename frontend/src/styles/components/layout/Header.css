@@ -15,3 +15,7 @@ header h1{
     display: flex;
     align-items: center;
 }
+
+.logo a{
+    height: 104px;
+}
