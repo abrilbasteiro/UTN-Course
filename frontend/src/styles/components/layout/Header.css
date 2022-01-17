@@ -1,5 +1,5 @@
 header{
-    background: linear-gradient(#ffe9a8 70%,#dfc98d, #ac9a68);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.493), rgba(0, 0, 0, 0.11)), url('../../../img/portada.png');
     padding: 1em 0;
 }
 
