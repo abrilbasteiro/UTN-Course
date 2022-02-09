@@ -1,0 +1,20 @@
+<div class="agregarForm">    
+    <form action="/admin/recetas/modificar" method="post" >
+        <input type="hidden" value="{{receta.id}}" name="id">
+
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo" value="{{receta.titulo}}">
+
+        <label for="ingredientes">Ingredientes</label>
+        <textarea name="ingredientes" id="ingredientes" cols="50" rows="5">{{receta.ingredientes}}</textarea>
+
+        <label for="preparacion">Preparación</label>
+        <textarea name="preparacion" id="preparacion" cols="50" rows="10" >{{receta.preparacion}}</textarea>
+
+        <button type="submit" class="loginBtn">Modificar</button>
+    </form>
+
+    {{#if error}}
+        {{message}}
+    {{/if}}
+</div>    

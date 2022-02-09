@@ -1,0 +1,18 @@
+<div class="agregarForm">    
+    <form action="/admin/recetas/agregar" method="post" >
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <label for="ingredientes">Ingredientes</label>
+        <textarea name="ingredientes" id="ingredientes" cols="50" rows="5"></textarea>
+
+        <label for="preparacion">Preparación</label>
+        <textarea name="preparacion" id="preparacion" cols="50" rows="10"></textarea>
+
+        <button type="submit" class="loginBtn">Agregar</button>
+    </form>
+
+    {{#if error}}
+        {{message}}
+    {{/if}}
+</div>    
