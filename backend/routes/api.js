@@ -7,21 +7,20 @@ router.get('/recetas', async function (req, res, next) {
     let recetas = await recetasModel.getRecetas();
     
     recetas = recetas.map(recetas => {
+        var url = ''
         if (recetas.img_id) {
-            const imagen = cloudinary.url(recetas.img_id, {
-                width: 960,
-                height:200,
-                crop: 'fill'
-            });
-            return {
-                ...recetas,
-                imagen
-            }
+            url = recetas.img_id
         } else {
-            return {
-                ...novedades,
-                imagen: ''
-            }
+            url = 'https://res.cloudinary.com/quecomemos/image/upload/v1644531087/noimageavailable_jzak89.png'
+        }
+        const imagen = cloudinary.url(url, {
+            width: 960,
+            height:200,
+            crop: 'fill'
+        });
+        return {
+            ...recetas,
+            imagen
         }
     });
 

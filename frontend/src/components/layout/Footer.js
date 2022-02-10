@@ -3,7 +3,7 @@ import '../../styles/components/layout/Footer.css'
 const Footer = (props) => {
     return(
         <footer>
-            <p>Diseñado por Abril Basteiro, 2021</p>
+            <p>Diseñado por Abril Basteiro, 2022</p>
         </footer>
     );
 }
