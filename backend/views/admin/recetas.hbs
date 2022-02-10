@@ -1,4 +1,33 @@
-<div class="usuarioLogin">
+<div class="usuarioLogout">
     <p>Hola {{usuario}}!</p>
     <a class="logoutBtn" href="/admin/login/logout">Cerrar sesión</a>
+</div>
+
+<div class="holder">
+    <h2 class="recetasTitulo">Mis recetas</h2>
+    <a class="nuevoBtn" href="/admin/recetas/agregar"><i class='bx bx-list-plus listIcon'></i>&nbsp;Nueva receta</a>
+</div>
+
+<div class="recetasAdmin">
+    <table class="tabla">
+        <thead class="encabezadoTabla">
+            <tr>
+                <th>#</th>
+                <th>Título</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each recetas}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{titulo}}</td>
+                <td>
+                    <a href="/admin/recetas/modificar/{{id}}"><i class='bx bx-pencil'></i></a>
+                    <a href="/admin/recetas/eliminar/{{id}}"><i class='bx bx-trash' ></i></a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
 </div>

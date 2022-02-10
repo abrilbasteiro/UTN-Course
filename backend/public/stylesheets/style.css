@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
 }
-html,
-body{
-  height: 100%;
-}
+
 body{
   background-color:rgb(241, 235, 219);
   color: #555;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   font-weight: 300;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+
 }
 
 .holder{
@@ -34,7 +37,8 @@ body{
   margin: 1em 0;
 }
 
-.loginForm label{
+.loginForm label,
+.agregarForm label{
   display: block;
   color: #4c7091;
   margin: 0.4em 0 0 0;
@@ -53,26 +57,132 @@ body{
   padding: .5em 1em;
   text-align: center;
   width: auto;
-  display: block;
 } 
 
 .loginForm input,
+.agregarForm input,
 .loginBtn,
-.logoutBtn{
+.logoutBtn,
+.nuevoBtn{
   border-radius: 5px;
   border: 1px solid #718DA5;
   margin: .5em 0;
   font-size: .8em;
 }
 
-.loginBtn:hover,
-.logoutBtn:hover{
+.loginBtn{
+  display: block;
+}
+
+.logoutBtn,
+.nuevoBtn{
+  width: fit-content;
+  text-decoration: none;
+  font-size: .8em;
+  font-weight: 400;
+  float: right;
+}
+
+.nuevoBtn{
+  background: #4A6F8B;
+  color: #fff;
+  padding: .5em;
+  text-align: center;
+  width: auto;
+  position: absolute;
+  right: 10%;
+  top: 14em;
+  display: flex;
+  align-items: center;
+}
+
+.loginBtn:hover{
   background: #718DA5;
 }
 
-.logoutBtn{
-  width: fit-content;
-  text-decoration: none;
-  font-size: .9em;
-  font-weight: 400;
+.logoutBtn:hover{
+  background: #a57b71;
+}
+
+.nuevoBtn:hover{
+  background: #4a8b77;
+
+}
+
+.usuarioLogout{
+  float: right;
+  margin-top: 1em;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.usuarioLogout p{
+  float: left;
+  margin-right: 1.5em;
+}
+
+.recetasTitulo{
+  margin-top: 3em;
+  text-transform: uppercase;
+}
+
+.listIcon{
+  font-size: 1.5em;
+}
+
+.tabla{
+  width: 70%;
+  margin: 2em auto;
+  border-collapse: collapse;
+}
+
+.tabla *{
+  padding: .5em;
+}
+
+.tabla tr {
+  border-bottom: 1px solid rgb(229, 219, 192);
+}
+
+.encabezadoTabla{
+  background-color: rgb(229, 219, 192);
+  text-align: left;
+}
+
+th:first-of-type,
+td:first-of-type{
+  text-align: left;
+  padding-left: 2em;
+  width: 10%;
+}
+
+th:last-of-type,
+td:last-of-type{
+  text-align: end;
+  padding-right: 2em;
+}
+
+.agregarForm{
+  width: 30%;
+  margin: 3em auto;
+}
+
+.agregarForm *{
+  width: 100%;
+}
+
+.agregarForm input,
+.agregarForm textarea{
+  background: #e8f0f5;
+  padding: .4em .6em;
+}
+
+
+textarea{
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #718DA5;
+  margin: .5em 0;
+  font-size: .8em;
 }
