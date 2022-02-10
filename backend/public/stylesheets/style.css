@@ -145,6 +145,11 @@ a{
   border-bottom: 1px solid rgb(229, 219, 192);
 }
 
+.tabla img {
+  display: block;
+  margin: auto;
+}
+
 .encabezadoTabla{
   background-color: rgb(229, 219, 192);
   text-align: left;
@@ -152,15 +157,24 @@ a{
 
 th:first-of-type,
 td:first-of-type{
-  text-align: left;
   padding-left: 2em;
+  width: 5%;
+}
+
+th:nth-child(2),
+td:nth-child(2){
+  text-align: center;
   width: 10%;
 }
 
-th:last-of-type,
-td:last-of-type{
+th:last-of-type{
   text-align: end;
   padding-right: 2em;
+}
+
+td:last-of-type{
+  text-align: end;
+  padding-right: 1em;
 }
 
 .agregarForm{
@@ -185,4 +199,8 @@ textarea{
   border: 1px solid #718DA5;
   margin: .5em 0;
   font-size: .8em;
+}
+
+#img_delete{
+  width: 10%;
 }

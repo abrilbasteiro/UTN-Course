@@ -1,5 +1,5 @@
 <div class="agregarForm">    
-    <form action="/admin/recetas/modificar" method="post" >
+    <form action="/admin/recetas/modificar" method="post" enctype="multipart/form-data">
         <input type="hidden" value="{{receta.id}}" name="id">
 
         <label for="titulo">Título</label>
@@ -11,6 +11,10 @@
         <label for="preparacion">Preparación</label>
         <textarea name="preparacion" id="preparacion" cols="50" rows="10" >{{receta.preparacion}}</textarea>
 
+        <label>Imagen: <input type="file" name="imagen" id="imagen"/> </label>
+        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Eliminar imagen actual?</label>
+        <input type="hidden" name="img_original" value="{{receta.img_id}}">
+        
         <button type="submit" class="loginBtn">Modificar</button>
     </form>
 

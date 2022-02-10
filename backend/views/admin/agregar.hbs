@@ -1,5 +1,5 @@
 <div class="agregarForm">    
-    <form action="/admin/recetas/agregar" method="post" >
+    <form action="/admin/recetas/agregar" method="post" enctype="multipart/form-data">
         <label for="titulo">Título</label>
         <input type="text" id="titulo" name="titulo">
 
@@ -8,6 +8,8 @@
 
         <label for="preparacion">Preparación</label>
         <textarea name="preparacion" id="preparacion" cols="50" rows="10"></textarea>
+
+        <label>Imagen: <input type="file" name="imagen" id="imagen"/> </label>
 
         <button type="submit" class="loginBtn">Agregar</button>
     </form>
