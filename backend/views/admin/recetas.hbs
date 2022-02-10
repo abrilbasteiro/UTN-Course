@@ -13,6 +13,7 @@
         <thead class="encabezadoTabla">
             <tr>
                 <th>#</th>
+                <th>Imagen</th>
                 <th>Título</th>
                 <th>Acciones</th>
             </tr>
@@ -21,6 +22,7 @@
             {{#each recetas}}
             <tr>
                 <td>{{id}}</td>
+                <td>{{{imagen}}}</td>
                 <td>{{titulo}}</td>
                 <td>
                     <a href="/admin/recetas/modificar/{{id}}"><i class='bx bx-pencil'></i></a>
