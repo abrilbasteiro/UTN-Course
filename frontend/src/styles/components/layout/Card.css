@@ -1,7 +1,6 @@
 .receta{
     border: 1px solid #fff;
-    width: 21%;
-    height: autp;
+    width: 27%;
     overflow: hidden;
     background-color: #D3DEE7;
     float: left;
@@ -10,15 +9,30 @@
 
 .receta img{
     width: 100%;
-    display: block;
-    border-bottom: 1px solid #fff;
+   
+}
+@supports(object-fit: cover){
+    .receta img{
+        height: 100%;
+        object-fit: cover;
+        /* object-position: center center; */
+    }
 }
 
+.imagenReceta{
+    border-bottom: 1px solid #fff;
+    height: 7em;
+}
 .tituloReceta{
-    width: 100%;
     border-bottom: 1px solid #fff;
     padding: .5em 1em;
     background-color: #A2B8C8;
+    text-align: center;
+}
+
+.ingredientesReceta{
+    padding: .8em;
+    font-size: 1.2em;
 }
 
 .receta h3{
@@ -36,14 +50,21 @@
 
 .ingredientesReceta ul li{
     font-size: .7em;
-    padding-left: .5em;
+    padding: 0 1em;
+    list-style: none;
 }
 
 .pasosReceta{
     border-top: 1px solid #fff;
+    padding: .8em;
+}
+
+.pasosReceta h4{
+    font-size: 1.1em;
 }
 
 .pasosReceta p{
-    font-size: .7em;
-    margin: 0 0 2em .5em;
+    font-size: .8em;
+    margin: .5em 0 .7em .5em;
+    
 }
